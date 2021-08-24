@@ -1,0 +1,9 @@
+.main {
+  display: grid;
+  padding: 5% 0;
+  row-gap: 32px;
+}
+
+.section-title {
+  text-align: center;
+}

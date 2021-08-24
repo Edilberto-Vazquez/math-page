@@ -1,0 +1,87 @@
+/* figure container */
+.figure-container {
+  min-width: 280px;
+  max-width: 350px;
+  height: auto;
+  padding: 20px 20px;
+  display: grid;
+  row-gap: 24px;
+  background: #42bd79;
+}
+
+/* figure card */
+
+.figure-card {
+  padding: 5% 5%;
+  display: grid;
+  row-gap: 14px;
+  background: #3ea76e;
+  border-radius: 10px;
+}
+
+/* figure card header */
+
+.figure-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.figure-card-header__img {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.figure-card-header__title {
+  font-size: 1.6rem;
+}
+
+/* figure card form */
+
+.figure-card-form {
+  display: grid;
+  row-gap: 14px;
+}
+
+.figure-card-form__label {
+  font-size: 1.6rem;
+}
+
+.figure-card-form__input {
+  height: 24px;
+  border-radius: 5px;
+  border: none;
+}
+
+.figure-card-form-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 14px;
+}
+
+.figure-card-form-buttons__button {
+  height: 24px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* figure result */
+
+.figure-result {
+  display: grid;
+  justify-items: center;
+  row-gap: 14px;
+}
+
+.figure-result__img {
+  width: 100px;
+  height: 100px;
+}
+
+.figure-result-formula {
+  height: auto;
+}
+
+.figure-result-formula__item {
+  font-size: 1.6rem;
+}

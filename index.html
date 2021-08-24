@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/figureContainer.css" />
+    <title>Figures</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="section-title">Geometric figures</h1>
+      <div class="figure-container">
+        <div class="figure-card">
+          <div class="figure-card-header">
+            <img
+              src="./assets/icons/figures/square.svg"
+              alt=""
+              class="figure-card-header__img"
+            />
+            <h3 class="figure-card-header__title">Cuadrado</h3>
+          </div>
+          <form class="figure-card-form">
+            <label for="square-side" class="figure-card-form__label"
+              >Cuanto miden los lados de tu cuadrado</label
+            >
+            <input
+              id="square-side"
+              name="side"
+              type="number"
+              class="figure-card-form__input"
+            />
+            <div class="figure-card-form-buttons">
+              <button
+                type="button"
+                onclick="calculateArea()"
+                class="figure-card-form-buttons__button"
+              >
+                Area
+              </button>
+              <button
+                type="button"
+                onclick="calculatePerimeter()"
+                class="figure-card-form-buttons__button"
+              >
+                Perimetro
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="figure-result">
+          <img
+            src="./assets/icons/figures/square.svg"
+            alt=""
+            class="figure-result__img"
+          />
+          <div id="formulas" class="figure-result-formula">
+            <div class="figure-result-formula__item">
+              <span id="area">A</span>
+              <span>=</span>
+              <span id="base">b</span>
+              <span>*</span>
+              <span id="height">h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/figuras.js"></script>
+  </body>
+</html>
